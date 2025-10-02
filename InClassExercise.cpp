@@ -6,6 +6,18 @@
 // TODO: Define the OOPCourse::Math namespace structure and
 //       the internal anonymous namespace here.
 
+// Anonymous namespace
+namespace
+{
+    /**
+     * @brief print the log of the calculation
+     * * @param result [in] result that want to print
+     */
+    void log_calculation(int result) {
+        std::cout << "LOG: Calculation performed, result is " << result << std::endl;
+    }
+}
+
 // Primary namespace
 namespace OOPCourse{
     // Nasted namespace
@@ -24,18 +36,6 @@ namespace OOPCourse{
             log_calculation(sum);
             return sum;
         }
-    }
-}
-
-// Anonymous namespace
-namespace
-{
-    /**
-     * @brief print the log of the calculation
-     * * @param result [in] result that want to print
-     */
-    void log_calculation(int result) {
-        std::cout << "LOG: Calculation performed, result is " << result << std::endl;
     }
 }
 
